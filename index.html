@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jure Aljaz</title>
+<meta name="description" content="Jure Aljaz, People &amp; Performance and Learning &amp; Development leader. Led change in five roles, from a sports club to global pharma.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Jure Aljaz, People &amp; Performance leader">
+<meta property="og:description" content="Led change in five roles, from a sports club to global pharma.">
+<meta property="og:image" content="https://ruurashal.github.io/jure-aljaz/thumbnail.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='12' fill='%23fff' stroke='%23e4002b' stroke-width='5'/%3E%3Ccircle cx='16' cy='16' r='5' fill='%23e4002b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&display=swap" rel="stylesheet">
+<style>
+/* VOICE work, personal page for hiring managers and recruiters: calm, exact, confident
+   IDEA a transit line map and timetable: a career as one line through stations, ending at the current interchange
+   PICTURE the route drawn large in red, stations named on it, Novartis as the "now" interchange
+   COLOUR white, black ink, signal red for the line and key figures, one grey; night #0e0e0e
+   TYPE Archivo wide 800 for the name and headings, Archivo for text
+   LAYOUT top rule, name across the top with figures at right, route full width below; phone stacks name, route (vertical), figures */
+:root{color-scheme:light dark;--bg:light-dark(#ffffff,#0e0e0e);--ink:light-dark(#111111,#f2f2f2);--red:light-dark(#e4002b,#ff3b55);--grey:light-dark(#62656b,#a3a6ad);--rule:light-dark(#e3e3e3,#2a2a2a);--soft:light-dark(#f5f5f5,#171717)}
+:root[data-theme=light]{color-scheme:light}
+:root[data-theme=dark]{color-scheme:dark}
+*{box-sizing:border-box;min-width:0}
+html{scroll-padding-top:72px;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.55 Archivo,system-ui,sans-serif;font-stretch:100%;overflow-x:clip}
+a{color:inherit;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:3px solid var(--red);outline-offset:3px}
+.band{padding-block:clamp(28px,4vw,64px);padding-left:max(5vw,16px);padding-right:max(5vw,16px)}
+.wrap{max-width:1240px;margin:0 auto}
+nav{position:sticky;top:0;z-index:5;background:var(--bg);border-top:8px solid var(--ink);border-bottom:1px solid var(--rule)}
+nav .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 24px;padding:12px max(5vw,16px)}
+nav b{font-stretch:112%;font-weight:800;font-size:18px}
+nav ul{display:flex;flex-wrap:wrap;gap:4px 20px;list-style:none;margin:0;padding:0}
+nav a{display:inline-block;padding:10px 0;text-decoration:none;font-size:15px}
+nav a:hover{color:var(--red)}
+h1,h2,h3{font-stretch:112%;font-weight:800;letter-spacing:-.02em;line-height:1.05;margin:0;text-wrap:balance}
+h1{font-size:clamp(56px,10vw,112px)}
+h2{font-size:clamp(32px,4.4vw,48px);margin-bottom:28px}
+h3{font-size:22px}
+.lede{font-size:clamp(20px,2.2vw,24px);line-height:1.35;max-width:30ch;margin:0}
+.who{display:flex;align-items:center;gap:18px;margin-top:20px}
+.me{flex:none;width:88px;height:88px;border-radius:50%;object-fit:cover;border:3px solid var(--ink)}
+@media(max-width:600px){.me{width:64px;height:64px}}
+.top{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:32px 48px;align-items:end}
+.figs{display:grid;grid-template-columns:repeat(auto-fit,minmax(7.5em,1fr));gap:20px;border-top:3px solid var(--ink);padding-top:16px}
+.figs strong{display:block;font-stretch:112%;font-weight:800;font-size:clamp(34px,4.2vw,52px);white-space:nowrap;line-height:1;color:var(--red)}
+.figs span{display:block;font-size:15px;color:var(--grey);margin-top:6px;max-width:22ch}
+.fig{position:relative;min-height:300px;margin-top:36px}
+.fig>svg{position:absolute;inset:0;width:100%;height:100%}
+.fig text{font-family:Archivo,system-ui,sans-serif;fill:var(--ink)}
+.fig .sub{fill:var(--grey);font-size:14px}
+.fig .nm{font-size:17px;font-weight:700}
+.fig .now{fill:var(--red);font-size:14px;font-weight:800;font-stretch:112%}
+.fig .line{stroke:var(--red);stroke-width:12;stroke-linecap:round;fill:none}
+.fig .dot{fill:var(--bg);stroke:var(--ink);stroke-width:5}
+.fig .hub{fill:var(--bg);stroke:var(--red);stroke-width:7}
+.cap{font-size:14px;color:var(--grey);margin:8px 0 0}
+@media(prefers-reduced-motion:no-preference){.fig .line{stroke-dasharray:var(--len);stroke-dashoffset:var(--len);animation:draw 1.4s .2s ease-out forwards}}
+@keyframes draw{to{stroke-dashoffset:0}}
+.alt{background:var(--soft)}
+.tt{list-style:none;margin:0;padding:0;border-top:3px solid var(--ink)}
+.tt li{display:grid;grid-template-columns:minmax(0,15rem) minmax(0,1fr);gap:8px 40px;padding:26px 0;border-bottom:1px solid var(--rule)}
+.when{font-stretch:112%;font-weight:800;font-size:clamp(24px,3vw,34px);line-height:1.05;color:var(--grey)}
+.tt li:first-child .when{color:var(--red)}
+.tt p{margin:6px 0 0;max-width:68ch}
+.ft{font-size:19px;font-weight:600;margin:12px 0 0;max-width:62ch}
+.ft b{color:var(--red);padding:0 4px}
+.tt .org{color:var(--grey);font-size:16px;margin-top:4px}
+.tt ul{margin:10px 0 0;padding-left:1.1em;max-width:68ch}
+.tt ul li{display:list-item;padding:3px 0;border:0}
+.cols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px;border-top:3px solid var(--ink);padding-top:24px}
+.cols p{margin:10px 0 0}
+.cols .k{font-stretch:112%;font-weight:800;font-size:44px;line-height:1;color:var(--red);display:block;margin-bottom:10px}
+.two{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 56px}
+.two p{margin:0 0 14px;max-width:62ch}
+.fit ul{list-style:none;margin:0 0 18px;padding:0;border-top:3px solid var(--ink)}
+.fit li{padding:16px 0 16px 28px;border-bottom:1px solid var(--rule);position:relative}
+.fit li::before{content:"";position:absolute;left:0;top:24px;width:12px;height:12px;border-radius:50%;background:var(--red)}
+.fit p{max-width:62ch}
+#fit .lede{margin-top:0}
+.creds{display:grid;grid-template-columns:max-content minmax(0,1fr);gap:10px 24px;margin:22px 0 0;padding-top:18px;border-top:3px solid var(--ink)}
+.creds dt{font-weight:700}
+.creds dd{margin:0}
+@media(max-width:600px){.creds{grid-template-columns:minmax(0,1fr);gap:2px}.creds dd{margin-bottom:10px}}
+.contact{background:var(--ink);color:var(--bg)}
+.contact h2{color:var(--bg)}
+.contact .two p{max-width:46ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
+.btn{display:inline-flex;align-items:center;min-height:48px;padding:0 22px;font:700 16px Archivo,system-ui,sans-serif;text-decoration:none;border:2px solid var(--bg);color:var(--bg);background:transparent;cursor:pointer}
+.btn.p{background:var(--red);border-color:var(--red);color:#fff}
+.btn:hover{opacity:.88}
+.addr{white-space:nowrap;font-weight:700}
+.note{font-size:14px;opacity:.75;margin-top:18px}
+footer{border-top:1px solid var(--rule);font-size:14px;color:var(--grey)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+@media(max-width:900px){.cols{grid-template-columns:minmax(0,1fr)}.cols>div{border-bottom:1px solid var(--rule);padding-bottom:20px}}
+@media(max-width:760px){.top,.two{grid-template-columns:minmax(0,1fr)}.tt li{grid-template-columns:minmax(0,1fr)}}
+@media(max-width:640px){.fig{min-height:470px}nav ul{gap:0 16px}}
+</style>
+</head>
+<body>
+<nav aria-label="Main">
+  <div class="wrap">
+    <b>Jure Aljaz</b>
+    <ul>
+      <li><a href="#route">Route</a></li>
+      <li><a href="#impact">Impact</a></li>
+      <li><a href="#fit">Fit</a></li>
+      <li><a href="#approach">Approach</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="band">
+  <div class="wrap">
+    <div class="top">
+      <div>
+        <h1>Jure Aljaz</h1>
+        <div class="who"><img class="me" src="data:image/jpeg;base64,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" alt="Portrait of Jure Aljaz" width="88" height="88"><p class="lede">People &amp; performance leader. I have led change in five roles, from a sports club to global pharma.</p></div>
+      </div>
+      <div class="figs" aria-label="Key figures">
+        <div><strong>5</strong><span>roles where I led the change</span></div>
+        <div><strong>6&#8594;150</strong><span>members at Tigers Domžale, the club I co-built</span></div>
+        <div><strong>~1,000</strong><span>people whose learning and performance I have shaped</span></div>
+      </div>
+    </div>
+    <div class="fig" id="map" role="img" aria-label="Career route: youth program head and national team coach in American football, elementary school teacher and institutional development lead, co-founder of Apres Outdoor Group, Head of Digital Content Strategy and Product Innovation at DZS, now GxP Training and Learning Business Partner at Novartis"><svg id="s"></svg></div>
+    <p class="cap">My route so far. Stations, not to time scale.</p>
+  </div>
+</header>
+
+<section class="band alt" id="route">
+  <div class="wrap">
+    <h2>I have led change in five roles.</h2>
+    <ol class="tt">
+      <li>
+        <div class="when">Since Oct 2025</div>
+        <div>
+          <h3>GxP Training and Learning Business Partner</h3>
+          <div class="org">Novartis, Quality Management System (GxP), Slovenia</div>
+          <p class="ft">From varied local practice <b>&#8594;</b> standardized processes for qualifying and training people</p>
+          <ul>
+            <li>Lead the implementation and governance of these processes across a large site and leadership-team functions, tailored to each manager's needs.</li>
+            <li>First point of contact for training in audits and inspections.</li>
+            <li>Led a process improvement that connects document management with training, so new procedures reach the right people.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">2024–2025</div>
+        <div>
+          <h3>Head of Digital Content Strategy &amp; Product Innovation</h3>
+          <div class="org">DZS, one of Slovenia's three largest publishers</div>
+          <p class="ft">From a paper-first publisher <b>&#8594;</b> a working digital editorial department</p>
+          <ul>
+            <li>Started and set up the processes for the new department in a company used to working on paper.</li>
+            <li>Reported directly to the CEO, who was not convinced of the shift at first. Led a team of 6.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">2020–2023</div>
+        <div>
+          <h3>Co-founder and Co-owner, Apres Outdoor Group d. o. o.</h3>
+          <div class="org">Cycling and ski goggles</div>
+          <p class="ft">From a planned retail business <b>&#8594;</b> online-first sales within its first three months, as COVID changed the market</p>
+          <ul>
+            <li>Built and ran the company end to end with one business partner, then sold it. It is still operating today.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">2017–2024</div>
+        <div>
+          <h3>Elementary School Teacher and Institutional Development Lead</h3>
+          <div class="org">OŠ Preserje pri Radomljah, a Glasser Quality School, one of only two in Europe</div>
+          <p class="ft">From commitments on paper <b>&#8594;</b> real, visible progress toward keeping the Quality School title</p>
+          <ul>
+            <li>Responsible for the criteria the school had to meet to keep its Glasser Quality School title, backed by my advanced certificate in Reality Therapy, the method these schools are built on.</li>
+            <li>During organisational turmoil and COVID, led a fast switch to new technology for a community that avoided it: coordinated parents and teachers, supported the leadership and led the development team.</li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <div class="when">2014–2018</div>
+        <div>
+          <h3>Youth Program Head &amp; National Team Coach</h3>
+          <div class="org">American football · National team head coach (ZANS), 2016–2018 · Youth program head, Tigers Domžale, 2014–2018</div>
+          <p class="ft">From no national team <b>&#8594;</b> Slovenia's first national team coach in American football</p>
+          <ul>
+            <li>Co-built Tigers Domžale from 6 members to 150, leading the club's training department and youth programme.</li>
+            <li>Also the club's quarterback, on the team that became Slovenia's first champion in American football. If you grew up with the game, you know the quarterback is more than a position: he sets the culture in the locker room and is the coach's right hand on the field. That is the role I like to play in a leadership team.</li>
+          </ul>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="band" id="impact">
+  <div class="wrap">
+    <h2>What I bring to a fast-growing team.</h2>
+    <div class="cols">
+      <div>
+        <span class="k">6&#8594;150</span>
+        <h3>Building from zero</h3>
+        <p>I co-built Tigers Domžale from 6 members to 150, set up a digital department where none existed and co-founded a company. Early-stage growth, with too few people and too much to do, is familiar ground.</p>
+      </div>
+      <div>
+        <span class="k">GxP</span>
+        <h3>Performance systems people follow</h3>
+        <p>I lead standardized, audit-ready training processes in global pharma, and I owned the criteria for a school's Glasser Quality School title. With advanced training in Reality Therapy, I build systems that raise the bar through clear expectations and honest conversations, not bureaucracy.</p>
+      </div>
+      <div>
+        <span class="k">3 months</span>
+        <h3>Change under pressure</h3>
+        <p>During COVID I moved my new company online within its first three months and helped a technology-averse school community make the switch. At DZS I brought digital work into a paper-first publisher while reporting to a CEO who was sceptical at first.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="fit">
+  <div class="wrap two">
+    <div>
+      <h2>Where I fit best.</h2>
+      <p class="lede">You are a young, fast-growing company, and you need someone who can do most of this job from day one and adapt the rest to how you work.</p>
+    </div>
+    <div class="fit">
+      <ul>
+        <li><b>I have already done most of the work.</b> Leading people, building performance and quality systems, training and developing teams, keeping processes audit-ready, and handling the difficult conversations, with advanced training in Reality Therapy.</li>
+        <li><b>I adapt to your situation.</b> I have built things from scratch in five very different settings, from a club of 6 people to a global pharma company.</li>
+        <li><b>I am used to early-stage reality.</b> Too few people, changing priorities and processes that are still taking shape.</li>
+      </ul>
+      <p>Candidates with long careers in large companies often bring a ready-made playbook. That works when the processes already exist. In a young company it can be too rigid. I start by understanding how you actually work, then build the people processes around it.</p>
+    </div>
+  </div>
+</section>
+
+<section class="band alt" id="approach">
+  <div class="wrap two">
+    <div>
+      <h2>How I work.</h2>
+    </div>
+    <div>
+      <p>I have been a coach, a teacher, a co-founder and a manager in a regulated corporate setting. That mix shapes how I work on people and performance: hire for the stage the company is at, make expectations clear, give honest feedback early and keep the processes light enough that people actually use them.</p>
+      <p>My approach draws on Choice Theory, and I hold an advanced certificate in Reality Therapy, its practical method for honest, forward-looking conversations. The core idea: people do their best work when they understand why something matters and choose to own it. High performance comes from strong relationships and clear goals, not from pressure.</p>
+      <dl class="creds">
+        <dt>Education</dt><dd>Master's degree, Teaching at the Primary Level with English, University of Ljubljana, Faculty of Education</dd>
+        <dt>Certificates</dt><dd>Reality Therapy, advanced certificate (Choice Theory and Reality Therapy)</dd>
+        <dt>Languages</dt><dd>Slovenian, English</dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="band contact" id="contact">
+  <div class="wrap two">
+    <div>
+      <h2>Building a team that performs?</h2>
+    </div>
+    <div>
+      <p>I am open to People &amp; Performance and Learning &amp; Development leadership roles, in Ljubljana or remote. Let's talk.</p>
+      <p>Email: <a class="addr" id="mail" href="mailto:jure.aljaz1@gmail.com">jure.aljaz1@gmail.com</a></p>
+      <div class="cta">
+        <button class="btn p" id="copy" type="button">Copy email</button>
+        <a class="btn" href="https://www.linkedin.com/in/jure-aljaz">LinkedIn</a>
+      </div>
+      <p>LinkedIn: <span class="addr">linkedin.com/in/jure-aljaz</span></p>
+    </div>
+  </div>
+</section>
+
+<footer class="band">
+  <div class="wrap"><span>Jure Aljaz, Slovenia</span><span>© 2026</span></div>
+</footer>
+
+<script>
+{
+const st=[
+  {n:['Youth Program Head &','National Team Coach'],p:'American football'},
+  {n:['Teacher & Development Lead'],p:'OŠ Preserje pri Radomljah'},
+  {n:['Co-founder & Co-owner'],p:'Apres Outdoor Group'},
+  {n:['Head of Digital Content','Strategy & Product Innovation'],p:'DZS'},
+  {n:['GxP Training and Learning','Business Partner'],p:'Novartis',now:true}
+];
+const s=document.getElementById('s');
+const esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const draw=()=>{
+  const W=s.clientWidth,H=s.clientHeight;
+  if(!W||!H)return;
+  const n=st.length;let out='',pts=[];
+  if(W>=640){
+    const mx=Math.min(110,W*.1),y=H*.5,step=(W-2*mx)/(n-1),fs=W<900?14:16,ss=W<900?13:14,lh=fs+5;
+    pts=st.map((d,i)=>[mx+i*step,y]);
+    out+=`<path class="line" style="--len:${W}" d="M${pts[0][0]-30} ${y}H${pts[n-1][0]}"/>`;
+    st.forEach((d,i)=>{
+      const [x]=pts[i],up=i%2===1,r=d.now?24:14;
+      out+=d.now?`<circle class="hub" cx="${x}" cy="${y}" r="${r}"/><circle cx="${x}" cy="${y}" r="8" fill="var(--red)"/>`:`<circle class="dot" cx="${x}" cy="${y}" r="${r}"/>`;
+      const a=i===0?'start':i===n-1?'end':'middle',tx=i===0?x-14:i===n-1?x+r:x;
+      const L=d.n.length+1,b0=up?y-r-18-(L-1)*lh:y+r+28;
+      d.n.forEach((t,k)=>{out+=`<text class="nm" style="font-size:${fs}px" x="${tx}" y="${b0+k*lh}" text-anchor="${a}">${esc(t)}</text>`;});
+      out+=`<text class="sub" style="font-size:${ss}px" x="${tx}" y="${b0+(L-1)*lh}" text-anchor="${a}">${esc(d.p)}</text>`;
+      if(d.now)out+=`<text class="now" x="${x}" y="${y-r-14}" text-anchor="middle">Now</text>`;
+    });
+  }else{
+    const x=34,my=44,step=(H-2*my)/(n-1),lh=19;
+    pts=st.map((d,i)=>[x,my+i*step]);
+    out+=`<path class="line" style="--len:${H}" d="M${x} ${my-24}V${pts[n-1][1]}"/>`;
+    st.forEach((d,i)=>{
+      const [,y]=pts[i],r=d.now?22:13,L=d.n.length+1,b0=y+5-((L-1)*lh)/2;
+      out+=d.now?`<circle class="hub" cx="${x}" cy="${y}" r="${r}"/><circle cx="${x}" cy="${y}" r="7" fill="var(--red)"/>`:`<circle class="dot" cx="${x}" cy="${y}" r="${r}"/>`;
+      d.n.forEach((t,k)=>{out+=`<text class="nm" style="font-size:15px" x="${x+40}" y="${b0+k*lh}">${esc(t)}</text>`;});
+      out+=`<text class="sub" style="font-size:13px" x="${x+40}" y="${b0+(L-1)*lh}">${esc(d.p)}${d.now?'':''}</text>`;
+      if(d.now)out+=`<text class="now" x="${x+40}" y="${b0-lh}">Now</text>`;
+    });
+  }
+  s.innerHTML=out;
+};
+const ro=new ResizeObserver(draw);
+ro.observe(s);
+const btn=document.getElementById('copy');
+btn.addEventListener('click',async()=>{
+  const t=document.getElementById('mail').textContent;
+  try{await navigator.clipboard.writeText(t);btn.textContent='Copied';}
+  catch(e){btn.textContent='Select the address to copy';}
+  setTimeout(()=>{btn.textContent='Copy email';},2000);
+});
+}
+</script>
+</body>
+</html>
